@@ -15,7 +15,7 @@ router.get("/login", async (req, res) => {
     if (user.length == 0) {
       res.status(404).json("Username/ Email Or Password is Wrong!");
     }
-    res.send(user);
+    res.status(404).json("Login Successfull!");
   }
 });
 
